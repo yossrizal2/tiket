@@ -90,11 +90,15 @@
                                             <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                         </a> --}}
                                     </form>
-                                    <hr>
                                     <div class="text-center">
                                         {{-- <a class="small" href="{{ route('password.request') }}">Forgot Password?</a> --}}
                                         <a class="small" href="#" onclick="alert('Please be patient. And try to remember your password again, hehehe.')">Forgot Password?</a>
                                     </div>
+                                    <hr>
+                                    
+                                    <a href="{{ url('/')}}" class="btn btn-secondary btn-user btn-block">
+                                        <i class="fas fa-ticket-alt fa-fw"></i> Beli Tiket
+                                    </a>
                                     {{-- <div class="row mb-0">
                                         <div class="col-md-8 offset-md-4">
                                             <button type="submit" class="btn btn-primary">

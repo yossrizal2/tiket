@@ -38,7 +38,7 @@ class PortalController extends Controller
 
         $data = $tiket;
 
-        return view('print/ticket_print', compact('data'));
+        return view('print/ticket_print2', compact('data'));
 
         // return back()->with('success','Anda berhasil memesan tiket kode unik anda adalah <b> '.$unique_id.' </b> ');
     }

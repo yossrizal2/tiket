@@ -19,6 +19,7 @@ class CheckController extends Controller
 
         // return response()->json($data);
 
+        if (!isset($data->unique_id)) return back()->with('error', 'Kode Tiket Salah atau Tidak Ada.');
         if ($data->unique_id == null) return back()->with('error', 'Kode Tiket Salah atau Tidak Ada.');
         if ($data->status == 1) return back()->with('error', 'Maaf! Kode Tiket kedaluwarsa dan sudah digunakan.');
 

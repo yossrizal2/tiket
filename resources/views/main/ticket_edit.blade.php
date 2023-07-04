@@ -26,15 +26,27 @@
             @csrf
             <input type="text" name="id" value="{{ $data->id }}" hidden>
             <div class="form-group">
+                <label for="">
+                    <b>Kode Tiket</b>
+                </label>
                 <input type="text" class="form-control form-control-user" name="unique_id" readonly placeholder="Kode Unik" value="{{ $data->unique_id }}">
             </div>
             <div class="form-group">
+                <label for="">
+                    <b>ID Card Number</b>
+                </label>
                 <input type="text" class="form-control form-control-user" name="id_card_number" required autofocus placeholder="ID Card Number / NIK / Nomor SIM" value="{{ $data->id_card_number }}">
             </div>
             <div class="form-group">
+                <label for="">
+                    <b>Name</b>
+                </label>
                 <input type="text" class="form-control form-control-user" name="name" required placeholder="Nama Lengkap" value="{{ $data->name }}">
             </div>
             <div class="form-group">
+                <label for="">
+                    <b>Address</b>
+                </label>
                 <input type="text" class="form-control form-control-user" name="address" required placeholder="Alamat" value="{{ $data->address }}">
             </div>
             <button type="submit" class="btn btn-warning btn-user btn-block">

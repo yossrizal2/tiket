@@ -118,8 +118,9 @@
                     <div id="collapsePages" class="collapse" aria-labelledby="headingPages"
                         data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">Custom System:</h6>
+                            <h6 class="collapse-header">System:</h6>
                             <a class="collapse-item" href="{{ url('main/change-password') }}">Change Password Admin</a>                        
+                            <a class="collapse-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>                        
                         </div>
                     </div>
                 </li>
@@ -194,7 +195,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin {{ config('app.name') }}</span>
                                     <img class="img-profile rounded-circle"
-                                        src="img/undraw_profile.svg">
+                                        src="https://cdn-icons-png.flaticon.com/512/552/552721.png">
                                 </a>
                                 <!-- Dropdown - User Information -->
                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

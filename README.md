@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Instalation Tiket Mantab
+## Installation Tiket Mantab
 
 - php artisan migrate
 - php artisan db:seed
