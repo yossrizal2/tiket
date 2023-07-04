@@ -21,13 +21,17 @@ use Illuminate\Support\Facades\Route;
 
 // require __DIR__.'/auth.php';
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/', [App\Http\Controllers\PortalController::class, 'index']);
 
 Route::group(['prefix' => 'portal'], function () {
 
-    Route::get('/buy-ticket', function () {
-        return view('portal/buy_ticket');
-    });
+    // Route::get('/buy-ticket', function () {
+    //     return view('portal/buy_ticket');
+    // });
+
+    Route::get('/', [App\Http\Controllers\PortalController::class, 'index']);
+
+    Route::post('buy-ticket/store', [App\Http\Controllers\PortalController::class, 'ticket_store']);
 
 
 });
@@ -38,12 +42,12 @@ Route::group(['prefix' => 'main','middleware' => 'auth'], function () {
     Route::get('/', [App\Http\Controllers\MainController::class, 'dashboard']);
 
     Route::group(['prefix' => 'admin'], function () {
-        // Route::get('manage-order', [App\Http\Controllers\AdminController::class, 'ticket']);
-        // Route::get('manage-ticket/add', [App\Http\Controllers\AdminController::class, 'ticket_add']);
-        // Route::post('manage-ticket/store', [App\Http\Controllers\AdminController::class, 'ticket_store']);
-        Route::get('manage-ticket/edit/{id}', [App\Http\Controllers\AdminController::class, 'ticket_edit']);
-        Route::post('manage-ticket/update', [App\Http\Controllers\AdminController::class, 'ticket_update']);
-        Route::get('manage-ticket/delete/{id}', [App\Http\Controllers\AdminController::class, 'ticket_delete']);
+        Route::get('ticket', [App\Http\Controllers\AdminController::class, 'ticket']);
+        // Route::get('ticket/add', [App\Http\Controllers\AdminController::class, 'ticket_add']);
+        // Route::post('ticket/store', [App\Http\Controllers\AdminController::class, 'ticket_store']);
+        Route::get('ticket/edit/{id}', [App\Http\Controllers\AdminController::class, 'ticket_edit']);
+        Route::post('ticket/update', [App\Http\Controllers\AdminController::class, 'ticket_update']);
+        Route::get('ticket/delete/{id}', [App\Http\Controllers\AdminController::class, 'ticket_delete']);
 
     });
 

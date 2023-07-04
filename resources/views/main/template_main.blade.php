@@ -22,6 +22,8 @@
         
         @yield('head')
 
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+
     </head>
 
     <body id="page-top">
@@ -59,30 +61,42 @@
                 </div>
 
                 <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo"
                         aria-expanded="true" aria-controls="collapseTwo">
                         <i class="fas fa-user-circle"></i>
-                        <span>Portfolio</span>
+                        <span>Ticket</span>
                     </a>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">Portfolio Edit:</h6>
-                            <a class="collapse-item" href="{{ url('main/portfolio/personal')}}">Personal Data</a>
-                            <a class="collapse-item" href="{{ url('main/portfolio/experience')}}">Experience</a>
-                            <a class="collapse-item" href="{{ url('main/portfolio/project')}}">Project</a>
-                            <a class="collapse-item" href="{{ url('main/portfolio/certificate')}}">Certificate</a>
-                            <a class="collapse-item" href="{{ url('main/portfolio/hobby')}}">Hobby and Others</a>
-                            <a class="collapse-item" href="{{ url('main/portfolio/social-media')}}">Social Media</a>
+                            <h6 class="collapse-header">Management Ticket:</h6>
+                            <a class="collapse-item" href="{{ url('main/admin/manage-ticket')}}">Ticket List</a>
+                            <a class="collapse-item" href="{{ url('main/admin/experience')}}">Experience</a>
+                            <a class="collapse-item" href="{{ url('main/admin/project')}}">Project</a>
+                            <a class="collapse-item" href="{{ url('main/admin/certificate')}}">Certificate</a>
+                            <a class="collapse-item" href="{{ url('main/admin/hobby')}}">Hobby and Others</a>
+                            <a class="collapse-item" href="{{ url('main/admin/social-media')}}">Social Media</a>
                         </div>
                     </div>
-                </li>
+                </li> --}}
 
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('main/pricelist')}}">
+                    <a class="nav-link" href="{{ url('main/admin/ticket')}}">
                         <i class="fas fa-fw fa-table"></i>
-                        <span>Pricelist</span></a>
+                        <span>Ticket</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('main/check-in')}}">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Check In</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('main/admin/ticket')}}">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Report</span></a>
                 </li>
 
                 <!-- Divider -->
@@ -110,11 +124,11 @@
                 </li>
 
                 <!-- Nav Item - Charts -->
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="{{ url('main/traffic') }}">
                         <i class="fas fa-fw fa-chart-area"></i>
                         <span>Traffic</span></a>
-                </li>
+                </li> --}}
                 
 
                 <!-- Divider -->
@@ -278,6 +292,8 @@
 
         <!-- Custom scripts for all pages-->
         <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+
 
         @yield('js')
 

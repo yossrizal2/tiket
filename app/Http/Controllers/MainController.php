@@ -6,9 +6,18 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
+use App\Models\Ticket;
+use Auth;
+
 class MainController extends Controller
 {
     //
+
+    public function dashboard(){
+        $data = [];
+
+        return view('main/dashboard', compact('data'));
+    }
 
     public function change_password(){
 
@@ -29,7 +38,7 @@ class MainController extends Controller
 
         $data = [];
         // $flight = Portfolio::find(1);
-        $data = User::find(11);
+        $data = User::find(Auth::id());
 
         // return response()->json(Hash::check($request->{'old-password'}, $data->password));
 

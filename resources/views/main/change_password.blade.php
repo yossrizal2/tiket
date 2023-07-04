@@ -26,9 +26,6 @@
             <p>
                 Masukan password baru dibawah ini.
             </p>
-            @if($data->profile_image != '')
-            <img src="{{ url('uploads/images/').'/'.$data->profile_image }}" class="img-fluid" style="max-width: 200px; max-height: 100px;">
-            @endif
         </div>
         <form class="user" action="{{ url('main/change-password-submit') }}" method="POST" enctype="multipart/form-data">
             @csrf
