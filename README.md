@@ -21,7 +21,8 @@ To run this project, you will need to add the following environment variables to
 
 `ANOTHER_API_KEY`
 
-Image Preview
+##Image Preview
+
 ![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc1.png?raw=true)
 ![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc2.png?raw=true)
 ![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc3.png?raw=true)
