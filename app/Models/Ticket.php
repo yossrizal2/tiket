@@ -14,6 +14,7 @@ class Ticket extends Model
     protected $fillable = [
         'id_card_number',
         'name',
-        'address'
+        'address',
+        'status'
     ];
 }
