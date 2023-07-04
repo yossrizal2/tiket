@@ -65,12 +65,15 @@
 @endsection
 @section('js')
 <script>
-    // let table = new DataTable('#myTable');
+    // let table = new DataTable('#myTable');    
+
     $(document).ready(function() {
         $('#myTable').DataTable( {
+            dom: 'Bfrtip',
             buttons: [
-                'print'
-            ]
+                'copy', 'excel', 'pdf'
+            ],
+            order: [[2, 'desc']],
         } );
     } );
 

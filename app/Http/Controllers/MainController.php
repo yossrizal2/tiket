@@ -15,8 +15,14 @@ class MainController extends Controller
 
     public function dashboard(){
         $data = [];
+        
+        $all_ticket = Ticket::all();
+        $count_ticket = $all_ticket->count();
 
-        return view('main/dashboard', compact('data'));
+        $all_ticket = Ticket::where('status', '=', 1)->get();
+        $used_ticket = $all_ticket->count();
+
+        return view('main/dashboard', compact('data','count_ticket','used_ticket'));
     }
 
     public function change_password(){
