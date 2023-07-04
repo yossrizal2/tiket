@@ -17,9 +17,15 @@ Login admin with admin@email.com | 123456
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`DB_DATABASE`
 
-`ANOTHER_API_KEY`
+`DB_USERNAME`
+
+`DB_PASSWORD`
+
+`APP_URL`
+
+`APP_URL`
 
 ## Image Preview
 
