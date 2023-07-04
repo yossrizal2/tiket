@@ -53,7 +53,7 @@ Route::group(['prefix' => 'main','middleware' => 'auth'], function () {
 
     Route::group(['prefix' => 'check-in'], function () {
         Route::get('/', [App\Http\Controllers\CheckController::class, 'check']);
-        Route::get('check-ticket', [App\Http\Controllers\CheckController::class, 'check_ticket']);
+        Route::post('check-ticket', [App\Http\Controllers\CheckController::class, 'check_ticket']);
     });
 
     Route::group(['prefix' => 'report'], function () {

@@ -83,18 +83,18 @@
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('main/admin/ticket')}}">
-                        <i class="fas fa-fw fa-table"></i>
+                        <i class="fas fa-fw fa-ticket-alt"></i>
                         <span>Ticket</span></a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('main/check-in')}}">
-                        <i class="fas fa-fw fa-table"></i>
+                        <i class="fas fa-fw fa-check"></i>
                         <span>Check In</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('main/admin/ticket')}}">
+                    <a class="nav-link" href="{{ url('main/report')}}">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Report</span></a>
                 </li>

@@ -14,11 +14,17 @@ class CheckController extends Controller
         return view('main/check', compact('data'));
     }
 
-    public function check_in($id){
-        $data = Ticket::find('unique_id', $id)->first();
+    public function check_ticket(Request $request){
+        $data = Ticket::where('unique_id', $request->unique_id)->first();
 
-        if ($data->uniquq_id == null) return back()->with('error', 'Kode Tiket Salah atau Tidak Ada.');
+        // return response()->json($data);
 
-        return view('main/check_in', compact('data'));
+        if ($data->unique_id == null) return back()->with('error', 'Kode Tiket Salah atau Tidak Ada.');
+        if ($data->status == 1) return back()->with('error', 'Maaf! Kode Tiket kedaluwarsa dan sudah digunakan.');
+
+        $data->status = 1;
+        $data->save();
+
+        return view('main/check_ticket', compact('data'));
     }
 }

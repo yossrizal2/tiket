@@ -22,7 +22,7 @@
                 Cek Tiket.
             </p>
         </div>
-        <form method="GET" action="{{ url('main/admin/check-in/check-ticket') }}">
+        <form method="POST" action="{{ url('main/check-in/check-ticket') }}">
             @csrf
             <div class="form-group">
                 <input type="text" class="form-control form-control-user" name="unique_id" required placeholder="Kode Tiket">

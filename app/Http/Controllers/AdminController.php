@@ -38,7 +38,6 @@ class AdminController extends Controller
         $tiket->id_card_number = $request->id_card_number;
         $tiket->name = $request->name;
         $tiket->address = $request->address;
-        $tiket->status = 1;
         
 
         $tiket->save();
