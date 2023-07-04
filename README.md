@@ -8,11 +8,18 @@
 </p>
 
 ## Installation Tiket Mantab
-
-- php artisan migrate
-- php artisan db:seed
+```bash
+php artisan migrate
+php artisan db:seed
+```
 
 Login admin with admin@email.com | 123456
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
 
 <!-- ## About Laravel
 
