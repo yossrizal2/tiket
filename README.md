@@ -34,8 +34,6 @@ To run this project, you will need to add the following environment variables to
 ![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc9.png?raw=true)
 ![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc10.png?raw=true)
 ![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc11.png?raw=true)
-![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc12.png?raw=true)
-![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc13.png?raw=true)
 
 
 <!-- ## About Laravel
