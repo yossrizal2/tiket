@@ -21,6 +21,22 @@ To run this project, you will need to add the following environment variables to
 
 `ANOTHER_API_KEY`
 
+Image Preview
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc1.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc2.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc3.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc4.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc5.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc6.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc7.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc8.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc9.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc10.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc11.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc12.jpg?raw=true)
+![alt text](https://github.com/yossrizal2/tiket/blob/main/public/uploads/images/doc13.jpg?raw=true)
+
+
 <!-- ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
